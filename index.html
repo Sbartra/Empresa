@@ -161,6 +161,46 @@
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
+    
+   .item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  color: white;
+  width: 60%;
+  
+  font-size: 2em;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+.item-1{
+	animation-name: anim-1;
+}
+.item-2{
+	animation-name: anim-2;
+}
+.item-3{
+	animation-name: anim-3;
+}
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}   
+    
   @keyframes slide {
     0% {
       opacity: 0;
@@ -223,9 +263,13 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>ORIOLTECH</h1> 
-  <p>Diseño y Desarrrollo de páginas Web</p> 
-  
+  <!--<h1>ORIOLTECH</h1> 
+  <p>Diseño y Desarrrollo de páginas Web</p>-->
+  <p class="item-1">ANUNCIANDO EL EVANGELIO</p>
+    
+<p class="item-2">A TODAS LAS NACIONES </p>
+
+<p class="item-3">DE LA TIERRA</p>
   <!--<form>
     <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>

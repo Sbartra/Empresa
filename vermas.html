@@ -16,22 +16,39 @@
             line-height: 1.8;
             background-color: azure;
         }
-
         img {
      border-radius: 8px; 
     }
-
     a {
         text-align: center;
     }
-
-    footer {
-        padding: 50px;
-        border: 8px;
-    }
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://i.ibb.co/hYWTfMD/water-1828865-1280.jpg');
+    min-height: 100%;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}        
+        
 </style>        
 </head>
 <body>
+ 
+    
     
     <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
@@ -42,7 +59,7 @@
     
     <div class="bgimg-2 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
-          <span class="w3-xxlarge w3-text-white w3-wide">PORTAFOLIO</span>
+          <span class="w3-xxlarge w3-text-white w3-wide"></span>
         </div>
       </div>
       
@@ -54,44 +71,44 @@
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
           <div class="w3-col m3">
-            <a href="https://efectoparalaje.netlify.com/">Parallax Effect</a>
-            <img src="https://i.ibb.co/Rpsvqqg/parallax.png" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="El Show de Kristell"/>
+            <a href="https://distribuidora.netlify.com/">Distribuidora</a>
+            <img src="https://i.ibb.co/MRStJ0K/distribuidora-medicamentos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Distribuidora"/>
           </div>
       
           <div class="w3-col m3">
-            <a href="https://gallant-wing-6498a2.netlify.com/">Chazuta Village</a>
-            <img src="https://vaolo.com/wp-content/uploads/2016/12/Chazuta-1200x900.jpg" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Chazuta Village"/>
+            <a href="https://navegacion.netlify.com/">Navegación Superior</a>
+            <img src="https://i.ibb.co/Ss3h356/74184-xb-GMPy-b1254f21-c230-445a-8074-1c48d8c9c900.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Menu despegable"/>
           </div>
       
           <div class="w3-col m3">
-            <a href="https://boring-hugle-57f54c.netlify.com/">JS Calculator</a>
-            <img src="https://i.ibb.co/pwtPk1s/calculator.jpg" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Javascript Calculator"/>
+            <a href="https://jscalculadora.netlify.com/">JS Calculator</a>
+            <img src="https://i.ibb.co/pwtPk1s/calculator.jpg"style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Javascript Calculator"/>
           </div>
       
           <div class="w3-col m3">
-            <a href="https://gifted-goldstine-1edaf2.netlify.com/">Random Quote Machine</a>
-            <img src="https://i.ibb.co/72d1Js9/Capture.png" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Random Quote Machine"/>
+            <a href="https://amazinquotes.netlify.com/">Random Quote Machine</a>
+            <img src="https://i.ibb.co/72d1Js9/Capture.png"style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Random Quote Machine"/>
           </div>
         </div>
       
         <div class="w3-row-padding w3-center w3-section">
           <div class="w3-col m3">
-            <a href="https://amazing-wilson-d2d9b5.netlify.com/">Timer</a>
-            <img src="https://i.ibb.co/80RfX5s/Capture2.png" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Timer"/>
+            <a href="https://ahuashiyacu.netlify.com/">Ahuashiyacu</a>
+            <img src="https://i.ibb.co/bmJ0vHn/ahua5-110801.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ahuashiyacu"/>
           </div>
       
           <div class="w3-col m3">
-            <a href="https://www.timeanddate.com/sun/peru/lima">Sunset in Lima City</a>
-            <img src="https://i.ibb.co/GC7MHP0/20180922-175052.jpg" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Lima City"/>
+            <a href="https://cacao.netlify.com/">Cacao.com</a>
+            <img src="https://i.ibb.co/GPm6qZm/health-benefits-of-cacao-1024x1024.jpg" style="width:100%"onclick="onClick(this)" class="w3-hover-opacity" alt="Cacao"/>
           </div>
       
           <div class="w3-col m3">
-            <a href="https://www.tripmondo.com/peru/region-de-san-martin/provincia-de-moyobamba/san-rafael/">San Rafael Village</a>
-            <img src="https://i.ibb.co/jHwr7C4/20180929-232209.jpg" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="full-moon in San Rafael"/>
+            <a href="https://cafeteria.netlify.com/">Coffee Shop</a>
+            <img src="https://s20.postimg.cc/59eo95bt9/coffee-wooden.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cafeteria"/>
           </div>
           <div class="w3-col m3">
-            <a href="https://es.wikipedia.org/wiki/Distrito_de_Shapaja">Shapaja River Bank</a>
-            <img src="https://i.ibb.co/F5LZH5R/20181003-122900.jpg" width="180" height="150"onclick="onClick(this)" class="w3-hover-opacity" alt="A beach in Shapaja"/>
+            <a href="https://sbartra.netlify.com/">Website</a>
+            <img src="https://i.ibb.co/Lk66qhS/randall-howto-1024x614.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="English Website"/>
           </div>
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
   <h4></h4>
@@ -105,6 +122,7 @@
   </div>
   <p>Creado por: <a href="https://segundobartra.netlify.com/" title="Orioltech" target="_blank" class="w3-hover-text-green">Segundo Bartra</a></p>
 </footer>
+ 
    
     <script>
         // Modal Image Gallery

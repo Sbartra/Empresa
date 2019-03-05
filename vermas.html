@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ver mas</title>
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+        body, html {
+            height: 100%;
+            color: 	#a0522d;
+            line-height: 1.8;
+            background-color: azure;
+        }
+
+        img {
+     border-radius: 8px; 
+    }
+
+    a {
+        text-align: center;
+    }
+
+    footer {
+        padding: 50px;
+        border: 8px;
+    }
+</style>        
+</head>
+<body>
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-white w3-wide">PORTAFOLIO</span>
+        </div>
+      </div>
+      
+      <!-- Container (Portfolio Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MAS TRABAJOS REALIZADOS</h3>
+        <p class="w3-center"><em>Aqui pueden apreciar mas de mis trabajos.<br>Presione la descripción para ver mis trabajos</em></p><br>
+      
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+          <div class="w3-col m3">
+            <a href="https://efectoparalaje.netlify.com/">Parallax Effect</a>
+            <img src="https://i.ibb.co/Rpsvqqg/parallax.png" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="El Show de Kristell"/>
+          </div>
+      
+          <div class="w3-col m3">
+            <a href="https://gallant-wing-6498a2.netlify.com/">Chazuta Village</a>
+            <img src="https://vaolo.com/wp-content/uploads/2016/12/Chazuta-1200x900.jpg" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Chazuta Village"/>
+          </div>
+      
+          <div class="w3-col m3">
+            <a href="https://boring-hugle-57f54c.netlify.com/">JS Calculator</a>
+            <img src="https://i.ibb.co/pwtPk1s/calculator.jpg" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Javascript Calculator"/>
+          </div>
+      
+          <div class="w3-col m3">
+            <a href="https://gifted-goldstine-1edaf2.netlify.com/">Random Quote Machine</a>
+            <img src="https://i.ibb.co/72d1Js9/Capture.png" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Random Quote Machine"/>
+          </div>
+        </div>
+      
+        <div class="w3-row-padding w3-center w3-section">
+          <div class="w3-col m3">
+            <a href="https://amazing-wilson-d2d9b5.netlify.com/">Timer</a>
+            <img src="https://i.ibb.co/80RfX5s/Capture2.png" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Timer"/>
+          </div>
+      
+          <div class="w3-col m3">
+            <a href="https://www.timeanddate.com/sun/peru/lima">Sunset in Lima City</a>
+            <img src="https://i.ibb.co/GC7MHP0/20180922-175052.jpg" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="Lima City"/>
+          </div>
+      
+          <div class="w3-col m3">
+            <a href="https://www.tripmondo.com/peru/region-de-san-martin/provincia-de-moyobamba/san-rafael/">San Rafael Village</a>
+            <img src="https://i.ibb.co/jHwr7C4/20180929-232209.jpg" width="180" height="150" onclick="onClick(this)" class="w3-hover-opacity" alt="full-moon in San Rafael"/>
+          </div>
+          <div class="w3-col m3">
+            <a href="https://es.wikipedia.org/wiki/Distrito_de_Shapaja">Shapaja River Bank</a>
+            <img src="https://i.ibb.co/F5LZH5R/20181003-122900.jpg" width="180" height="150"onclick="onClick(this)" class="w3-hover-opacity" alt="A beach in Shapaja"/>
+          </div>
+<footer>
+    <p>Creado por: <a href="https://segundobartra.netlify.com/" >Segundo Fasabi Bartra</a></p>
+</footer>
+</footer>
+ 
+   
+    <script>
+        // Modal Image Gallery
+  function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>         
+</body>
+</html>

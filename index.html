@@ -596,6 +596,16 @@ En ORIOLTECH desarrollamos un conjunto de estrategias para lograr con eficacia s
 </footer>
 
 <script>
+      // Modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }	
+	
+	</script>	
+<script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {

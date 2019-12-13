@@ -283,14 +283,19 @@ p {
 	<h1 class="item-3"><b>HERMOSAS PAGINAS WEB</b></h1>-->
 	
   <form action="/action_page.php" target="_blank" method="POST" data-netlify="true">
-    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+        </div>
+        <div class="w3-half">
           <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
         </div>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Suscribete</button>
       </div>
-    </div>
-  </form>
+      <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+      <button class="w3-button w3-round w3-black w3-right w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> ENVIA TU MENSAJE
+      </button>
+    </form>
 </div>
 
 <!-- Container (About Section) -->

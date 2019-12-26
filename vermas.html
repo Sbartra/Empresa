@@ -125,49 +125,113 @@
 </div>         
             
             
-<footer class="w3-center w3-indigo w3-padding-64 w3-margin">
-  <h4></h4>
-  <a href="https://orioltech.netlify.com/" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Volver al Inicio</a>
-  <div class="w3-xlarge w3-section">
-    <!--<a class="w3-button w3-large w3-teal" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i></a>-->
-  <a class="w3-button w3-large w3-teal" href="https://twitter.com/BartraSegundo?lang=es" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="https://github.com/" title="Github"><i class="fa fa-github"></i></a>
-  <!--<a class="w3-button w3-large w3-teal" href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram"></i></a>-->
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/in/segundo-bartra-5b979a175/" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+	<h3 class="w3-center w3-text-white"><b>NUESTRA UBICACION</b></h3>
+    <p class="w3-center"><em>Nos gustaria recibir sus comentarios</em></p>
+    <center>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.85626087248!2d-0.007412879269483478!3d51.6075222586915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1548245586538" width="1000" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </center>
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        
+      </div>
+
+<div class="w3-col m8 w3-panel">
+    <div class="w3-large w3-margin-bottom">
+      <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Londres , Reino Unido<br>
+      <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +44 7480259752<br>
+      <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"><a href="mailto:segundobartra@gmail.com" style="text-decoration:none"></i> Email: segundobartra@gmail.com</a><br>
+    </div>
+    <p>Para más información llene el formulario<i class="fa fa-wpforms"></i></p>
+    <form action="/action_page.php" target="_blank" method="POST" data-netlify="true">
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+      <button class="w3-button w3-round w3-indigo w3-right w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> ENVIA TU MENSAJE
+      </button>
+    </form>
   </div>
-  <p>Creado por: <a href="https://segundobartra.netlify.com/" title="Orioltech" target="_blank" class="w3-hover-text-green">Segundo Bartra</a></p>
+</div>
+</div>
+
+<!-- Image of location/map -->
+
+<!-- Footer -->
+<footer class="w3-center w3-indigo w3-padding-64 w3-margin">
+  <a href="#myPage" title="Inicio">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  <div class="w3-xlarge w3-section">
+    <!--<a class="w3-button w3-round w3-large w3-pink" href="https://www.facebook.com/oriol.fasabibartra" title="Facebook"><i class="fa fa-facebook"></i></a>-->
+  <a class="w3-button w3-round w3-large w3-pink" href="https://twitter.com/BartraSegundo?lang=es" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-round w3-large w3-pink" href="https://github.com/Sbartra" title="Github"><i class="fa fa-github"></i></a>
+  <!--<a class="w3-button w3-round w3-large w3-pink" href="https://www.instagram.com/oriolfasabibartra/" title="Instagram"><i class="fa fa-instagram"></i></a>-->
+  <a class="w3-button w3-round w3-large w3-pink w3-hide-small" href="https://www.linkedin.com/in/segundo-bartra-5b979a175/" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <p class="w3-center">Creado por: <a href="https://segundobartra.netlify.com/" title="Segundo Bartra" target="_blank" class="w3-hover-text-green">Segundo Fasabi Bartra</a></p>
 </footer>
- 
+
+<script>
+      // Modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }	
+	
+	</script>	
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
    
-    <script>
-        // Modal Image Gallery
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+<script>
   function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-    
-    // Change style of navbar on scroll
-    window.onscroll = function() {myFunction()};
-    function myFunction() {
-        var navbar = document.getElementById("myNavbar");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-        } else {
-            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-        }
-    }
-    
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-    </script>         
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  </script>
 </body>
 </html>
